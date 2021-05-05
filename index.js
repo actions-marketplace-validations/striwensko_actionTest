@@ -13,7 +13,7 @@ try {
   console.log('/home/runner/work/react-setup/react-setup/src/App.js');
   console.log("Error:   5:9  error  'time' is assigned a value but never used. eslint-disable no-unused-vars");
   core.warning('myInput was not set');
-  core.warning(JSON.stringify(process.env.GITHUB_REPOSITORY));
+  core.warning(JSON.stringify(process.env));
 
 } catch (error) {
   core.setFailed(error.message);
